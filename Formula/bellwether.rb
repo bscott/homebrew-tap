@@ -1,25 +1,25 @@
 class Bellwether < Formula
   desc "Report program status to your terminal with OSC 7501 (Program Status Protocol)"
   homepage "https://github.com/bscott/bellwether"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/bscott/bellwether/releases/download/v0.1.0/bellwether-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "74b82e6a4399fc4a13547ac7a04b188fe3516ebffb3bedfd44a1918d8dee2f45"
+      url "https://github.com/bscott/bellwether/releases/download/v0.1.1/bellwether-cli-aarch64-apple-darwin.tar.gz"
+      sha256 "db2fa887fd7cc24d08c383c5dc299ea3ff74923de984bf7cfe97c76245ed032c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bscott/bellwether/releases/download/v0.1.0/bellwether-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "ffccdcc6275baf7e933dc1ba6600cb0c008218e0f6af98c43744a4f96796d7ac"
+      url "https://github.com/bscott/bellwether/releases/download/v0.1.1/bellwether-cli-x86_64-apple-darwin.tar.gz"
+      sha256 "515c33d2ff1e7840c0f928c4dcb491d60f96728ba3644be2f69ad8fe11ce2212"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/bscott/bellwether/releases/download/v0.1.0/bellwether-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "2bb597f147ab6641c42eeec51cddc9c9d60d06eff5a2fced54e4491982b9b16d"
+      url "https://github.com/bscott/bellwether/releases/download/v0.1.1/bellwether-cli-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c6e7e79a7c006e1b5a0877711e5594ee43de86bf1758c82a32b8645406395399"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bscott/bellwether/releases/download/v0.1.0/bellwether-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "2c81c6ed9fa84d96ebc9d5ead8bc76d02b5171f9684f5b25527084221ba30f41"
+      url "https://github.com/bscott/bellwether/releases/download/v0.1.1/bellwether-cli-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "79784f97ff5eca190fd50ffdbaac0a06254c84840fe4f24af0be953f2223e73b"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
